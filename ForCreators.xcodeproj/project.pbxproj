@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,6 @@
 		A001849824F31F5C00502E7E /* XcodeSwiftUICanvasDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001849624F31F5C00502E7E /* XcodeSwiftUICanvasDemo.swift */; };
 		A001849924F31F5C00502E7E /* XcodeSwiftUICanvasDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001849624F31F5C00502E7E /* XcodeSwiftUICanvasDemo.swift */; };
 		A019659E24F21323000F6030 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A019659D24F21323000F6030 /* Assets.xcassets */; };
-		A01965A524F21323000F6030 /* LegolasDemo Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A01965A424F21323000F6030 /* LegolasDemo Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A01965AA24F21323000F6030 /* ForCreatorsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01965A924F21323000F6030 /* ForCreatorsApp.swift */; };
 		A01965AC24F21323000F6030 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01965AB24F21323000F6030 /* ContentView.swift */; };
 		A01965AE24F21323000F6030 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01965AD24F21323000F6030 /* NotificationController.swift */; };
@@ -39,13 +38,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A01965A624F21323000F6030 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A050C1D124EDA583006C11D2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A01965A324F21323000F6030;
-			remoteInfo = "LegolasDemo Extension";
-		};
 		A01965BA24F21324000F6030 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A050C1D124EDA583006C11D2 /* Project object */;
@@ -81,17 +73,6 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A01965C024F21324000F6030 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				A01965A524F21323000F6030 /* LegolasDemo Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -99,7 +80,6 @@
 		A019659B24F21322000F6030 /* LegolasDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LegolasDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A019659D24F21323000F6030 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A019659F24F21323000F6030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A01965A424F21323000F6030 /* LegolasDemo Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "LegolasDemo Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A01965A924F21323000F6030 /* ForCreatorsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForCreatorsApp.swift; sourceTree = "<group>"; };
 		A01965AB24F21323000F6030 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A01965AD24F21323000F6030 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
@@ -234,7 +214,6 @@
 				A050C1ED24EDA585006C11D2 /* Tests iOS.xctest */,
 				A050C1F824EDA585006C11D2 /* Tests macOS.xctest */,
 				A019659B24F21322000F6030 /* LegolasDemo.app */,
-				A01965A424F21323000F6030 /* LegolasDemo Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -292,34 +271,17 @@
 			buildConfigurationList = A01965C424F21324000F6030 /* Build configuration list for PBXNativeTarget "LegolasDemo" */;
 			buildPhases = (
 				A019659924F21322000F6030 /* Resources */,
-				A01965C024F21324000F6030 /* Embed App Extensions */,
+				A01965A024F21323000F6030 /* Sources */,
+				A01965A124F21323000F6030 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A01965A724F21323000F6030 /* PBXTargetDependency */,
 			);
 			name = LegolasDemo;
 			productName = LegolasDemo;
 			productReference = A019659B24F21322000F6030 /* LegolasDemo.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		A01965A324F21323000F6030 /* LegolasDemo Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A01965C324F21324000F6030 /* Build configuration list for PBXNativeTarget "LegolasDemo Extension" */;
-			buildPhases = (
-				A01965A024F21323000F6030 /* Sources */,
-				A01965A124F21323000F6030 /* Frameworks */,
-				A01965A224F21323000F6030 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "LegolasDemo Extension";
-			productName = "LegolasDemo Extension";
-			productReference = A01965A424F21323000F6030 /* LegolasDemo Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
+			productType = "com.apple.product-type.application";
 		};
 		A050C1DC24EDA585006C11D2 /* ForCreators (iOS) */ = {
 			isa = PBXNativeTarget;
@@ -399,13 +361,11 @@
 		A050C1D124EDA583006C11D2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1200;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					A019659A24F21322000F6030 = {
-						CreatedOnToolsVersion = 12.0;
-					};
-					A01965A324F21323000F6030 = {
 						CreatedOnToolsVersion = 12.0;
 					};
 					A050C1DC24EDA585006C11D2 = {
@@ -442,7 +402,6 @@
 				A050C1EC24EDA585006C11D2 /* Tests iOS */,
 				A050C1F724EDA585006C11D2 /* Tests macOS */,
 				A019659A24F21322000F6030 /* LegolasDemo */,
-				A01965A324F21323000F6030 /* LegolasDemo Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -452,16 +411,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A019659E24F21323000F6030 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A01965A224F21323000F6030 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 				A01965B724F21324000F6030 /* Preview Assets.xcassets in Resources */,
 				A01965B424F21324000F6030 /* Assets.xcassets in Resources */,
+				A019659E24F21323000F6030 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,11 +510,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A01965A724F21323000F6030 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A01965A324F21323000F6030 /* LegolasDemo Extension */;
-			targetProxy = A01965A624F21323000F6030 /* PBXContainerItemProxy */;
-		};
 		A01965BB24F21324000F6030 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			platformFilter = ios;
@@ -587,12 +534,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4DENVHJV75;
-				IBSC_MODULE = LegolasDemo_Extension;
+				DEVELOPMENT_TEAM = LRBR86W7V8;
 				INFOPLIST_FILE = LegolasDemo/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = me.legolas.ForCreators.watchkitapp;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.xchen586.ForCreators.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -607,62 +558,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4DENVHJV75;
-				IBSC_MODULE = LegolasDemo_Extension;
+				DEVELOPMENT_TEAM = LRBR86W7V8;
 				INFOPLIST_FILE = LegolasDemo/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = me.legolas.ForCreators.watchkitapp;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.xchen586.ForCreators.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
-			};
-			name = Release;
-		};
-		A01965C124F21324000F6030 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"LegolasDemo Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = 4DENVHJV75;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "LegolasDemo Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.legolas.ForCreators.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
-			};
-			name = Debug;
-		};
-		A01965C224F21324000F6030 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"LegolasDemo Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = 4DENVHJV75;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "LegolasDemo Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.legolas.ForCreators.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -706,6 +612,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -765,6 +672,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -790,7 +698,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ForCreators.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4DENVHJV75;
+				DEVELOPMENT_TEAM = LRBR86W7V8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -798,7 +706,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.legolas.ForCreators;
+				PRODUCT_BUNDLE_IDENTIFIER = me.xchen586.ForCreators;
 				PRODUCT_NAME = ForCreators;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = YES;
@@ -814,7 +722,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ForCreators.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4DENVHJV75;
+				DEVELOPMENT_TEAM = LRBR86W7V8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -822,7 +730,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.legolas.ForCreators;
+				PRODUCT_BUNDLE_IDENTIFIER = me.xchen586.ForCreators;
 				PRODUCT_NAME = ForCreators;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = YES;
@@ -840,7 +748,8 @@
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 4DENVHJV75;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = LRBR86W7V8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = macOS/Info.plist;
@@ -849,7 +758,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.legolas.ForCreators;
+				PRODUCT_BUNDLE_IDENTIFIER = me.xchen586.ForCreators;
 				PRODUCT_NAME = ForCreators;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
@@ -864,7 +773,8 @@
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 4DENVHJV75;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = LRBR86W7V8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = macOS/Info.plist;
@@ -873,7 +783,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.legolas.ForCreators;
+				PRODUCT_BUNDLE_IDENTIFIER = me.xchen586.ForCreators;
 				PRODUCT_NAME = ForCreators;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
@@ -885,7 +795,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4DENVHJV75;
+				DEVELOPMENT_TEAM = LRBR86W7V8;
 				INFOPLIST_FILE = "Tests iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -893,7 +803,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "me.legolas.Tests-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.xchen586.Tests-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -907,7 +817,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4DENVHJV75;
+				DEVELOPMENT_TEAM = LRBR86W7V8;
 				INFOPLIST_FILE = "Tests iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -915,7 +825,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "me.legolas.Tests-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.xchen586.Tests-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -931,7 +841,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 4DENVHJV75;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = LRBR86W7V8;
 				INFOPLIST_FILE = "Tests macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -939,7 +850,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "me.legolas.Tests-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.xchen586.Tests-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
@@ -953,7 +864,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 4DENVHJV75;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = LRBR86W7V8;
 				INFOPLIST_FILE = "Tests macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -961,7 +873,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "me.legolas.Tests-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.xchen586.Tests-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
@@ -972,15 +884,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A01965C324F21324000F6030 /* Build configuration list for PBXNativeTarget "LegolasDemo Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A01965C124F21324000F6030 /* Debug */,
-				A01965C224F21324000F6030 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		A01965C424F21324000F6030 /* Build configuration list for PBXNativeTarget "LegolasDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
